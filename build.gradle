@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+apply plugin: 'eclipse'
+
+apply plugin: 'application'
+
+
+
+mainClassName = 'hello.SampleController'
+
+
+
+jar {
+  
+  baseName = 'gs-gradle'
+
+   version =  '0.1.0'
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:1.5.3.RELEASE")
+}
+
